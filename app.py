@@ -13,8 +13,8 @@ HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
 def query_llama3(input_text, language):
     # Create the prompt
     prompt = (
-        f"Explain this code in {language}:\n\n{input_text}\n"
-        f"Provide a simple explanation in {language}. Only output the explanation and nothing else."
+        f"Provide a simple explanation of this code in {language}:\n\n{input_text}\n"
+        f"Only output the explanation and nothing else. Make sure that the output is written in {language} and only in {language}"
     )
 
     # Payload for the API
